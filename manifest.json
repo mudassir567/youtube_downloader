@@ -1,0 +1,16 @@
+{
+"name": "Youtube Downloader",
+"short_name": "Yt_Downloader",
+"start_url": "index.html",
+"display": "standalone",
+"background_color": "#333",
+"theme_color": "#333",
+"orientation": "portrait-primary",
+"icons": [
+    {
+      "src": "/img/d9.png",
+      "type": "image/png", "sizes": "72x72"
+    }
+
+]
+}
