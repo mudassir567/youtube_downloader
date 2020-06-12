@@ -1,7 +1,7 @@
 let downloadbutton = document.getElementById('downloadbtn');
 let URLinput = document.querySelector('.form-control');
 let select = document.querySelector('.opt');
-let serverURL  = "https://ytdownloader567.herokuapp.com";
+let serverURL  = "http://localhost:8001";   //  https://ytdownloader567.herokuapp.com"
 
 downloadbutton.addEventListener('click', () => {
 	if (!URLinput.value) {

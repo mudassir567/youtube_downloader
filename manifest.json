@@ -1,7 +1,7 @@
 {
   "name":"youtube-Downloader",
   "short_name":"yt-Downloader",
-  "start_url":"https://ytdownloader567.herokuapp.com",
+  "start_url":"index.html",
   "scope":"/",
   "display":"standalone",
   "background_color":"#333",
