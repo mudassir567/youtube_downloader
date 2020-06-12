@@ -2,21 +2,25 @@ const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
 var path = require('path');
-port =process.env.PORT || 4000;
+port =process.env.PORT || 8001;
 
 const app = express();
 
 app.use(cors());
 
-app.use("/static", express.static('./static/'));
+
+app.use('/', express.static(__dirname + "/"));
 
 app.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname ,'/index.html'));
 });
 
+app.get('/', function(request, response) {
+	response.sendFile(path.join(__dirname, '/serviceworker.js'));
+  });
 
 app.listen(port, () => {
-	console.log('Server Works !!! At port 4000');
+	console.log('Server Works !!! At port 8001');
 });
 
 app.get('/downloadmp3', async (req, res, next) => {
