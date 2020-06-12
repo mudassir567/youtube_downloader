@@ -7,6 +7,7 @@ if ("serviceWorker" in navigator) {
  
     })
 }
+
 let deferredPrompt;
 	var div = document.querySelector('.download11');
 	var button = document.getElementById('homescrn');
