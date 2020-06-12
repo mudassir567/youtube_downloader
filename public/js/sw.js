@@ -7,11 +7,9 @@ if ("serviceWorker" in navigator) {
  
     })
 }
-
-
 let deferredPrompt;
 	var div = document.querySelector('.download11');
-	var button = document.querySelector('.btn btn-secondary');
+	var button = document.getElementById('homescrn');
 	div.style.display = 'none';
 
 	window.addEventListener('beforeinstallprompt', (e) => {
